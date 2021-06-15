@@ -1,0 +1,74 @@
+{
+  "name": "fe_mob",
+  "description": "A Vue2 mob project",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "前端一锅煮",
+    "email": "1293004002@qq.com",
+    "url": "https://cjm0.gitee.io/blog"
+  },
+  "keywords": [
+    "vue2",
+    "mobile"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vue-cli-service serve --copy",
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --copy",
+    "build:test": "vue-cli-service build --mode prodtest",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "blueimp-md5": "^2.18.0",
+    "core-js": "^3.6.5",
+    "fastclick": "^1.0.6",
+    "register-service-worker": "^1.7.1",
+    "vant": "^2.9.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-nightwatch": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^1.0.3",
+    "autoprefixer": "^9.8.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.13.0",
+    "chromedriver": "86",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "geckodriver": "^1.20.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "postcss-pxtorem": "^5.1.1",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "engines": {
+    "node": ">= 12.17.0",
+    "npm": ">= 6.14.4"
+  }
+}

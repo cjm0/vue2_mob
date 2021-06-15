@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta name="format-detection" content="telephone=no,email=no,address=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="<%= process.env.VUE_APP_TITLE %>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <meta name="keywords" content="vue2 移动端项目">
+    <meta name="description" content="vue2 移动端项目">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script>
+      var isWeixin = navigator.userAgent.toLowerCase().indexOf('micromessenger') > -1
+      if (isWeixin) {
+        document.writeln("<script src=\'//res.wx.qq.com/open/js/jweixin-1.6.0.js\'><\/script>");
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= process.env.VUE_APP_TITLE %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
