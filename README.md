@@ -29,9 +29,9 @@ yarn test:unit
 ## 代码说明
 
 1. 全局变量
-    - $axios RESTful 请求
-    - $config 全局公共变量
-    - $cookie 全局 cookie 操作方法
+- $axios RESTful 请求
+- $config 全局公共变量
+- $cookie 全局 cookie 操作方法
 
 2. 本地缓存 localStorage
 
@@ -43,9 +43,17 @@ yarn test:unit
 
 ### 首页 pages/index
 
-## 版本
+## 插件版本
 
-`vue2.6.11 vue-router3.2.0 vuex3.4.0 axios0.19.2 vant2.9.2 webpack4 babel7`
+- vue ^2.6.11
+- vue-router ^3.2.0
+- vuex ^3.4.0
+- axios ^0.19.2
+- vue-cli3
+- webpack4
+- vant ^2.9.2
+- eslint ^6.7.2
+- node >= 12.17.0
 
 ## 参考文档
 

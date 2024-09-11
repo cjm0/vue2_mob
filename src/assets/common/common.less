@@ -314,14 +314,18 @@ samp {
 }
 
 /* 字体标准 */
+@font-face {
+  font-family: Emoji;
+  src: local("Apple Color Emojiji"), local("Segoe UI Emoji"), local("Segoe UI Symbol"), local("Noto Color Emoji");
+  unicode-range: U+1F000-1F644, U+203C-3299;
+}
 body {
-  font: 14px/1 -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  font: 400 14px/1.5 system-ui, —apple-system, Segoe UI, Rototo, Emoji, Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   text-align: left;
   color: @master;
-  font-weight: 400;
 }
 
 /* 位置 */
@@ -588,15 +592,31 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 200%;
-    height: 200%;
-    transform: scale(0.5);
     transform-origin: 0 0;
     pointer-events: none;
     box-sizing: border-box;
     border: 0 solid @line;
   }
 }
+@media (min-resolution: 2dppx) {
+  [class*='v-hairline'] {
+    &::after {
+      width: 200%;
+      height: 200%;
+      transform: scale(0.5);
+    }
+  }
+}
+@media (min-resolution: 3dppx) {
+  [class*='v-hairline'] {
+    &::after {
+      width: 300%;
+      height: 300%;
+      transform: scale(0.333333);
+    }
+  }
+}
+
 .v-hairline {
   &-left::after {
     border-left-width: 1px;
